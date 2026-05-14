@@ -1,0 +1,15 @@
+{
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.showInlineCompletions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "off",
+    "editor.wordBasedSuggestions": false
+}
