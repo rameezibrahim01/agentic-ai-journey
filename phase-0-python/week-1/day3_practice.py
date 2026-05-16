@@ -1,49 +1,49 @@
-# print("•	Print all numbers from 1 to 100 using a for loop")
-# 
-# for i in range(1,101):
-#     print(i)
+print("•	Print all numbers from 1 to 100 using a for loop")
 
-# print("•	Sum of first N numbers: ask for N, print sum of 1+2+...+N. Verify: N=10 → 55, N=100 → 5050")
+for i in range(1,101):
+    print(i)
 
-# n = int(input("Enter the value for N: "))
+print("•	Sum of first N numbers: ask for N, print sum of 1+2+...+N. Verify: N=10 → 55, N=100 → 5050")
 
-# total = 0
-# for i in range(1,n+1):
-#     total = total + i
-# print(f"Sum of N number is {total}")
+n = int(input("Enter the value for N: "))
 
-# print("•	Multiplication table: ask for a number, print its multiplication table from 1 to 12. (\"5 x 1 = 5\", \"5 x 2 = 10\"...)")
+total = 0
+for i in range(1,n+1):
+    total = total + i
+print(f"Sum of N number is {total}")
 
-# number = int(input("Give me a number: "))
+print("•	Multiplication table: ask for a number, print its multiplication table from 1 to 12. (\"5 x 1 = 5\", \"5 x 2 = 10\"...)")
 
-# for i in range(1, 13):
-#     print(f"{number} x {i} = {number * i}")
+number = int(input("Give me a number: "))
 
-# print("•	Guess the number game: hardcode a secret number (e.g., 42). Keep asking the user to guess until correct. Tell them \"too high\" or \"too low\". Track number of attempts.")
+for i in range(1, 13):
+    print(f"{number} x {i} = {number * i}")
 
-# secret_number = 45
-# count = 0
-# while True:
-#     guessed_number = int(input("Guess the number: "))
-#     count += 1
-#     if guessed_number == secret_number:
-#         print(f"That's correct! You got it in {count} tries")
-#         break
-#     elif guessed_number > secret_number:
-#         print("too high")
-#     else:
-#         print("too low")
+print("•	Guess the number game: hardcode a secret number (e.g., 42). Keep asking the user to guess until correct. Tell them \"too high\" or \"too low\". Track number of attempts.")
 
-# print("	Vowel counter: ask for a word. Count and print how many vowels (a/e/i/o/u) it has. Hint: loop through each letter.")
+secret_number = 45
+count = 0
+while True:
+    guessed_number = int(input("Guess the number: "))
+    count += 1
+    if guessed_number == secret_number:
+        print(f"That's correct! You got it in {count} tries")
+        break
+    elif guessed_number > secret_number:
+        print("too high")
+    else:
+        print("too low")
 
-# word = input("Enter a word: ")
-# word_lower = word.lower()
-# counter = 0
-# for letter in word_lower:
-#     if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
-#         counter += 1
+print("	Vowel counter: ask for a word. Count and print how many vowels (a/e/i/o/u) it has. Hint: loop through each letter.")
 
-# print(f"Total vowels in {word} = {counter}")
+word = input("Enter a word: ")
+word_lower = word.lower()
+counter = 0
+for letter in word_lower:
+    if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+        counter += 1
+
+print(f"Total vowels in {word} = {counter}")
 
 print("•	Average calculator: keep accepting numbers from the user until they type \"done\". Then print the average of all numbers entered.")
 
