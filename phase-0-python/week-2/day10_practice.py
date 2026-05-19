@@ -30,7 +30,7 @@
 
 print("•	Create a file diary.txt with 5 lines of text. Write a script that reads the file and prints each line with a line number.")
 
-with open("phase-0-python/week-2/diary.txt", "r") as f:
+with open("phase-0-python/week-2/output-files/diary.txt", "r") as f:
     line_number = 1
     for line in f:
         print(f"{line_number} {line.strip()}")
@@ -38,13 +38,13 @@ with open("phase-0-python/week-2/diary.txt", "r") as f:
 
 print("•	Word counter from file: read the diary.txt and count total words (split by whitespace).")
 
-with open("phase-0-python/week-2/diary.txt", "r") as f:
+with open("phase-0-python/week-2/output-files/diary.txt", "r") as f:
     content = f.read().split()
     print(len(content))
 
 print("•	Most common word: read a file, find which word appears most often. (Hint: use a dict to count).")
 
-with open("phase-0-python/week-2/diary.txt", "r") as f:
+with open("phase-0-python/week-2/output-files/diary.txt", "r") as f:
     word_list = f.read().split()
     word_counts = {}
     for word in word_list:
@@ -66,12 +66,12 @@ with open("phase-0-python/week-2/diary.txt", "r") as f:
 print('•	Append timestamps: write a script that appends a line "Logged at [current time]" to log.txt each time you run it. Use \'from datetime import datetime; datetime.now()\'.')
 
 from datetime import datetime
-with open("phase-0-python/week-2/log.txt", "a") as f:
+with open("phase-0-python/week-2/output-files/log.txt", "a") as f:
     f.write(f"Logged at {datetime.now()}\n")
 
 print("•	Copy a file: read diary.txt and write its contents to diary_capital.txt with all text uppercased.")
 
-with open("phase-0-python/week-2/diary.txt", "r") as f:
+with open("phase-0-python/week-2/output-files/diary.txt", "r") as f:
     contents = f.read().upper()
-    with open("phase-0-python/week-2/diary_capital.txt", "w") as f_write:
+    with open("phase-0-python/week-2/output-files/diary_capital.txt", "w") as f_write:
         f_write.write(contents)

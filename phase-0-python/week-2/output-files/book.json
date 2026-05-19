@@ -1,0 +1,10 @@
+{
+  "title": "One man show",
+  "author": "Alex",
+  "year": 2020,
+  "genre_list": [
+    "genre-1",
+    "genre-2"
+  ],
+  "available": true
+}

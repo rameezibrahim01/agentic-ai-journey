@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "title": "random book",
+      "author": "john",
+      "year": 2020,
+      "genre_list": [
+        "genre-1",
+        "genre-2"
+      ],
+      "available": false
+    },
+    {
+      "title": "swift",
+      "author": "kelly",
+      "year": 2012,
+      "genre_list": [
+        "genre-1",
+        "genre-2"
+      ],
+      "available": false
+    },
+    {
+      "title": "java",
+      "author": "brad",
+      "year": 2016,
+      "genre_list": [
+        "genre-1",
+        "genre-2"
+      ],
+      "available": true
+    }
+  ]
+}
