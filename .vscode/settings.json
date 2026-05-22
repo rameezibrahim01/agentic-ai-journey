@@ -11,5 +11,5 @@
     "editor.acceptSuggestionOnEnter": "off",
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "off",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
 }
