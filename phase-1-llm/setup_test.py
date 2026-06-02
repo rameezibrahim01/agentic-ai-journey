@@ -1,0 +1,15 @@
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="http://localhost:11434/v1",
+    api_key="ollama"
+)
+
+response = client.chat.completions.create(
+    model="qwen2.5:32b",
+    messages=[{"role": "user", "content": "Say hello in one sentence."}]
+)
+
+print(response.choices[0].message.content)
+print(f"Model: {response.model}")
+print("Setup complete!")
