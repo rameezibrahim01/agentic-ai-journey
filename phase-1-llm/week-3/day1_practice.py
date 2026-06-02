@@ -18,55 +18,55 @@ async def fetch_five_facts():
     for index, fact in enumerate(facts, 1):
         print(f"{index}: {fact}")
 
-# asyncio.run(fetch_five_facts())
+asyncio.run(fetch_five_facts())
 
 
 
-# print("•	Write async function fetch_weather(city) that calls OpenWeatherMap (from Phase 0). Fetch 3 cities simultaneously. Print all results.")
+print("•	Write async function fetch_weather(city) that calls OpenWeatherMap (from Phase 0). Fetch 3 cities simultaneously. Print all results.")
 
-# class Wind(BaseModel):
-#     speed:float
+class Wind(BaseModel):
+    speed:float
 
-# class Sys(BaseModel):
-#     country: str
+class Sys(BaseModel):
+    country: str
 
-# class Main(BaseModel):
-#     temp: float
-#     feels_like: float
-#     humidity: int
+class Main(BaseModel):
+    temp: float
+    feels_like: float
+    humidity: int
 
-# class Weather(BaseModel):
-#     description: str
+class Weather(BaseModel):
+    description: str
 
-# class WeatherResponse(BaseModel):
-#     sys: Sys
-#     wind: Wind
-#     main: Main
-#     weather:list[Weather]
-#     name:str
+class WeatherResponse(BaseModel):
+    sys: Sys
+    wind: Wind
+    main: Main
+    weather:list[Weather]
+    name:str
 
-# load_dotenv()
+load_dotenv()
 
-# key = os.getenv("OPENWEATHER_API_KEY")
-
-
-# async def fetch_weather(city: str):
-#     async with httpx.AsyncClient() as client:
-#         response = await client.get(f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}&units=metric")
-#         data = response.json()
-#         weather = WeatherResponse(**data)
-#         # print(f"Response:\nCity: {weather.name}\nCountry: {weather.sys.country}\nWind Speed: {weather.wind.speed}\nTemp: {weather.main.temp}\nConditions: {weather.weather[0].description}")
-#         return weather
-
-# async def fetch_three_cities_weather():
-#     weathers = await asyncio.gather(fetch_weather("dubai"), fetch_weather("abu dhabi"), fetch_weather("delhi"))
-#     for index, weather in enumerate(weathers, 1):
-#         print(f"{index}. {weather.name} : {weather.main.temp}")
-
-# asyncio.run(fetch_three_cities_weather())
+key = os.getenv("OPENWEATHER_API_KEY")
 
 
-# print("•	Time comparison: write the same task (fetch 5 cat facts) synchronously using requests AND async using httpx. Print elapsed time for each. How much faster is async?")
+async def fetch_weather(city: str):
+    async with httpx.AsyncClient() as client:
+        response = await client.get(f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}&units=metric")
+        data = response.json()
+        weather = WeatherResponse(**data)
+        # print(f"Response:\nCity: {weather.name}\nCountry: {weather.sys.country}\nWind Speed: {weather.wind.speed}\nTemp: {weather.main.temp}\nConditions: {weather.weather[0].description}")
+        return weather
+
+async def fetch_three_cities_weather():
+    weathers = await asyncio.gather(fetch_weather("dubai"), fetch_weather("abu dhabi"), fetch_weather("delhi"))
+    for index, weather in enumerate(weathers, 1):
+        print(f"{index}. {weather.name} : {weather.main.temp}")
+
+asyncio.run(fetch_three_cities_weather())
+
+
+print("•	Time comparison: write the same task (fetch 5 cat facts) synchronously using requests AND async using httpx. Print elapsed time for each. How much faster is async?")
 import truststore
 truststore.inject_into_ssl()
 import time
