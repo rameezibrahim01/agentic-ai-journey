@@ -1,0 +1,165 @@
+{
+  "total_emails": 10,
+  "urgent_count": 4,
+  "normal_count": 4,
+  "spam_count": 2,
+  "processed_at": "2026-06-17 16:28:58.832584",
+  "analysis": [
+    {
+      "email_id": 1,
+      "classification": "urgent",
+      "confidence": 9,
+      "reason": "The email subject contains the word 'URGENT' and mentions a strict deadline (EOD). The body emphasizes time sensitivity and potential consequences of not meeting the deadline.",
+      "entities": {
+        "sender_name": null,
+        "company": "bigclient.com",
+        "deadline": "2026-05-22 23:59",
+        "request_type": "Contract signing",
+        "urgency_signals": [
+          "URGENT",
+          "needs signing by EOD",
+          "time sensitive"
+        ]
+      },
+      "suggested_reply": "Dear [CEO's Name],\n\nThank you for your email. I understand the urgency of this matter and will ensure that the contract is signed today.\n\nBest regards,\n[Your Name]"
+    },
+    {
+      "email_id": 2,
+      "classification": "urgent",
+      "confidence": 9,
+      "reason": "The email subject and body indicate an immediate need for action due to a critical system failure affecting clients.",
+      "entities": {
+        "sender_name": null,
+        "company": "partner.com",
+        "deadline": null,
+        "request_type": "technical support",
+        "urgency_signals": [
+          "immediate action required",
+          "ASAP"
+        ]
+      },
+      "suggested_reply": "Thank you for reaching out. We are aware of the issue and our team is currently working on restoring the production server as quickly as possible. We will keep you updated on our progress."
+    },
+    {
+      "email_id": 3,
+      "classification": "urgent",
+      "confidence": 8,
+      "reason": "The email mentions a legal deadline that is approaching very soon (tomorrow), and it requests action by noon today.",
+      "entities": {
+        "sender_name": null,
+        "company": "corp.com",
+        "deadline": "2026-05-23 17:00",
+        "request_type": "Legal filing documents submission",
+        "urgency_signals": [
+          "legal deadline",
+          "tomorrow at 5pm",
+          "send all required documents by noon"
+        ]
+      },
+      "suggested_reply": "Dear Legal Team,\n\nThank you for the reminder. I will ensure that all required documents are submitted by noon today.\n\nBest regards,\n[Your Name]"
+    },
+    {
+      "email_id": 4,
+      "classification": "urgent",
+      "confidence": 8,
+      "reason": "The subject indicates urgency and the body mentions a specific deadline (Thursday EOD) for providing Q2 numbers before an important board meeting.",
+      "entities": {
+        "sender_name": null,
+        "company": "ventures.com",
+        "deadline": "Thursday EOD",
+        "request_type": "Q2 numbers submission",
+        "urgency_signals": [
+          "urgent response needed",
+          "need your Q2 numbers by Thursday EOD"
+        ]
+      },
+      "suggested_reply": "Dear Investor,\n\nThank you for reaching out. I understand the urgency of this request and will ensure that the Q2 numbers are submitted by Thursday EOD.\n\nBest regards,\n[Your Name]"
+    },
+    {
+      "email_id": 5,
+      "classification": "normal",
+      "confidence": 7,
+      "reason": "The email is a casual invitation for lunch and does not contain any urgency signals or critical information.",
+      "entities": {
+        "sender_name": null,
+        "company": "company.com",
+        "deadline": null,
+        "request_type": null,
+        "urgency_signals": []
+      },
+      "suggested_reply": null
+    },
+    {
+      "email_id": 6,
+      "classification": "normal",
+      "confidence": 7,
+      "reason": "The email is a reminder for an event and does not contain any urgent signals or critical information.",
+      "entities": {
+        "sender_name": null,
+        "company": "Company",
+        "deadline": "Friday",
+        "request_type": "RSVP",
+        "urgency_signals": []
+      },
+      "suggested_reply": null
+    },
+    {
+      "email_id": 7,
+      "classification": "normal",
+      "confidence": 8,
+      "reason": "The email is a routine communication about weekly standup notes and does not contain any urgency signals or deadlines.",
+      "entities": {
+        "sender_name": null,
+        "company": "team.com",
+        "deadline": null,
+        "request_type": null,
+        "urgency_signals": []
+      },
+      "suggested_reply": null
+    },
+    {
+      "email_id": 8,
+      "classification": "spam",
+      "confidence": 7,
+      "reason": "The email contains typical spam characteristics such as a generic sender address, an urgent call to action ('50% OFF today only!'), and a promotional message without personalized content.",
+      "entities": {
+        "sender_name": null,
+        "company": "shopping.com",
+        "deadline": "2026-05-22 12:30",
+        "request_type": null,
+        "urgency_signals": [
+          "Limited time offer"
+        ]
+      },
+      "suggested_reply": null
+    },
+    {
+      "email_id": 9,
+      "classification": "spam",
+      "confidence": 8,
+      "reason": "The email contains typical spam characteristics such as a generic congratulatory message and an urgent call to action to claim a prize, which are often used in phishing attempts.",
+      "entities": {
+        "sender_name": null,
+        "company": "deals.com",
+        "deadline": null,
+        "request_type": null,
+        "urgency_signals": []
+      },
+      "suggested_reply": null
+    },
+    {
+      "email_id": 10,
+      "classification": "normal",
+      "confidence": 7,
+      "reason": "The email is a promotional message from a bank offering a loan. It does not contain any urgent signals or personal identifiers that would suggest it requires immediate attention.",
+      "entities": {
+        "sender_name": null,
+        "company": "bank.com",
+        "deadline": null,
+        "request_type": null,
+        "urgency_signals": []
+      },
+      "suggested_reply": null
+    }
+  ]
+}

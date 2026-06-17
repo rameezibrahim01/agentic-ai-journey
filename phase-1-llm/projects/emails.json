@@ -1,0 +1,12 @@
+[
+  {"id": 1, "from_email": "ceo@bigclient.com", "subject": "URGENT: Contract needs signing by EOD", "body": "We need the signed contract today or we will have to go with another vendor. This is time sensitive.", "received_at": "2026-05-22 09:00"},
+  {"id": 2, "from_email": "manager@partner.com", "subject": "Server is down - immediate action required", "body": "Our production server has been down for 2 hours. Clients are affected. Need your team to fix this ASAP.", "received_at": "2026-05-22 09:30"},
+  {"id": 3, "from_email": "legal@corp.com", "subject": "Legal deadline tomorrow", "body": "Reminder that the legal filing deadline is tomorrow at 5pm. Please send all required documents by noon.", "received_at": "2026-05-22 10:00"},
+  {"id": 4, "from_email": "investor@ventures.com", "subject": "Investment meeting - urgent response needed", "body": "We have a board meeting Friday and need your Q2 numbers by Thursday EOD to proceed with the investment.", "received_at": "2026-05-22 10:30"},
+  {"id": 5, "from_email": "colleague@company.com", "subject": "Lunch tomorrow?", "body": "Hey, want to grab lunch tomorrow around noon? Let me know.", "received_at": "2026-05-22 11:00"},
+  {"id": 6, "from_email": "hr@company.com", "subject": "Team building event next month", "body": "Hi team, just a reminder about the team building event scheduled for next month. Please RSVP by Friday.", "received_at": "2026-05-22 11:30"},
+  {"id": 7, "from_email": "dev@team.com", "subject": "Weekly standup notes", "body": "Here are the notes from today's standup. We discussed the new feature rollout and bug fixes for next sprint.", "received_at": "2026-05-22 12:00"},
+  {"id": 8, "from_email": "newsletter@shopping.com", "subject": "50% OFF today only!", "body": "Don't miss our biggest sale of the year! Shop now and save 50% on everything. Limited time offer!", "received_at": "2026-05-22 12:30"},
+  {"id": 9, "from_email": "promo@deals.com", "subject": "You have been selected for a prize", "body": "Congratulations! You have been selected to receive a free gift. Click here to claim your prize now!", "received_at": "2026-05-22 13:00"},
+  {"id": 10, "from_email": "offers@bank.com", "subject": "Special loan offer just for you", "body": "You qualify for our special low interest loan. Apply now and get approved in minutes. No credit check required!", "received_at": "2026-05-22 13:30"}
+]
