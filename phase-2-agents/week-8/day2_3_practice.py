@@ -60,11 +60,11 @@ writer_agent = Agent(
 )
 
 math_agent = Agent(
-    name="Mathematician",
-    instructions="You perform calculations. Show your work. When done, you MUST hand off to Writer to save the results. Always hand off — never answer directly.",
-    tools=[calculator],
+    name = "Mathematician",
+    instructions="You perform calculations. Always show your work. Pass results to Writer when done.",
+    tools = [calculator],
     handoffs=[writer_agent],
-    model=MODEL
+    model = MODEL
 )
 
 research_agent = Agent(
@@ -89,12 +89,9 @@ IMPORTANT: Only one handoff per response. Never handoff to multiple agents at on
     model=MODEL
 )
 
-# result = Runner.run_sync(triage_agent, "Find Dubai and India populations, calculate the ratio, save to population_report.txt")
-# print(result.final_output)
-
 result = Runner.run_sync(triage_agent, "Find Dubai and India populations, calculate the ratio, save to population_report.txt")
 print(f"Final output: {result.final_output}")
 print(f"Last agent: {result.last_agent.name}")
 print(f"New items: {len(result.new_items)}")
 for item in result.new_items:
-    print(f"  - {type(item).__name__}: {item}")
+    print(f"  - {type(item).__name__}: {getattr(item, 'agent', {}) and item.agent.name} | {str(item)[:100]}")
